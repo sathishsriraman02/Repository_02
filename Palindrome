@@ -2,14 +2,14 @@ public class PalindromeNumber {
 
     public static void main(String[] args) {
 
-        int number = 123;
-        int original = number;
+        int num = 123;
+        int original = num;
         int reverse = 0;
 
-        while (number > 0) {
-            int remainder = number % 10;
+        while (num > 0) {
+            int remainder = num % 10;
             reverse = reverse * 10 + remainder;
-            number = number / 10;
+            num = num / 10;
         }
 
         if (original == reverse) {
